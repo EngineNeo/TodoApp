@@ -1,13 +1,19 @@
 <html>
     <head>
         <title>My To-do App</title>
+        <link rel="stylesheet" href="todo.css">
     </head>
     <body>
-        <input id="todo-title" type="text"/>
-        <input id="date-picker" type="date"/>
-        <button onclick="addTodo()">Add Todo</button>
+        <div class="input-container">
+            <input id="todo-title" type="text"/>
+            <input id="date-picker" type="date"/>
+            <button onclick="addTodo()">Add Todo</button>
+        </div>
 
-        <div id="todo-list"></div>
+        <div class="todo-container">
+            <div id="todo-list"></div>
+        </div>
+       
 
         <script tpye="text/javascript" src="todo.js"></script>
     </body>
